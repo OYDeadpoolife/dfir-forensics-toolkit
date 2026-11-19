@@ -150,15 +150,25 @@ verification with the real tool**.
 
 ## Screenshots
 
-Real screenshots are added by the author after running the project. Planned shots and exact commands are in
-[screenshots/README.md](screenshots/README.md). Until they exist, no image is embedded here.
+The images below are rendered from the real output of the commands shown, run on a clean clone of this repository. They are not
+photographs of a terminal window, and nothing in them is edited. The commands are listed in [screenshots/README.md](screenshots/README.md).
+As in the run above, `binwalk`, `foremost` and `bulk_extractor` were not installed, which is why they are `SKIPPED`.
 
-<!--
+**`./bin/dfir-triage`** on the demo evidence:
+
 ![dfir-triage run](screenshots/01-triage-run.png)
+
+**The case report**, section "Evidence" (SHA-256 before and after, integrity verdict):
+
 ![Case report](screenshots/02-case-report.png)
+
+**The case folder:**
+
 ![Case folder tree](screenshots/03-case-folder.png)
+
+**The test suite** (one test is skipped on macOS because the system `timeout` command is missing there):
+
 ![Tests](screenshots/04-test-results.png)
--->
 
 ## Testing
 

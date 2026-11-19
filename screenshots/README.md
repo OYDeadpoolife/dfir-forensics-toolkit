@@ -1,8 +1,9 @@
 # Screenshot guide
 
-These files do not exist yet. Take real screenshots on your own machine after running the commands below, save them in this
-folder with exactly these names, and remove the comment markers around the matching lines in the main `README.md`.
-A screenshot must show a real run; do not edit or fabricate results.
+Images `01` to `04` in this folder are rendered from the real output of the commands below, run on a clean clone of the repository.
+They are not photographs of a terminal window, and nothing in them is edited. Image `02` is cropped to section 2 of the report, because
+the full report also records the local account name in the file-owner field. Image `05` has not been taken. To replace an image with a native
+screenshot, run the same command on your own machine, keep the file name and overwrite the file. A screenshot must show a real run; do not edit or fabricate results.
 
 | File | Open | Run | What must be visible |
 |---|---|---|---|
