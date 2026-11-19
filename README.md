@@ -12,6 +12,14 @@ and Volatility 3 when they are installed, and writes everything into a new case 
 > programs were not installed where this was built; they are tested only with stub programs. The demo evidence is
 > synthetic and harmless. This is a learning and portfolio project, not a certified forensic tool.
 
+## In plain words
+
+Investigators work on a **copy** of a suspect disk or memory (the *evidence*), and the first rule is to prove that nothing was
+changed. `dfir-triage` takes one evidence file, takes its digital fingerprint (SHA-256) before and after, records basic facts about
+it (type, timestamps, readable text, and IP addresses and web addresses found inside), and writes a new case folder with a report
+and a log of every step. It never modifies the evidence and never installs anything. The demo evidence is a made-up file.
+New to these terms? See the [glossary](docs/glossary.md).
+
 ## For a recruiter or SOC manager (30 seconds)
 
 * **Problem:** a first-responder gets a disk or memory image and must preserve it, describe it and find leads quickly,
@@ -64,6 +72,10 @@ flowchart TD
     M1 & M2 & M3 & M4 --> H2[SHA-256 after<br/>compare]
     H2 --> R[case_report.md<br/>+ logs + custody]
 ```
+
+**How to read the diagram:** top to bottom. The evidence file is checked and fingerprinted first; then the analysis steps
+(*modules*) run; then the fingerprint is taken again and compared, which shows that nothing was changed; finally the report and the
+logs are written to a new case folder.
 
 See [docs/forensics-workflow.md](docs/forensics-workflow.md).
 
