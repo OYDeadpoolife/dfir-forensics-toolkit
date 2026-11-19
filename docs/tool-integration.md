@@ -5,7 +5,7 @@ verified. **Nothing is marked verified unless it was actually executed.**
 
 | Component | Call made by the toolkit | Verified here? |
 |---|---|---|
-| `file`, `strings`, `od`, `stat`, `sha256sum`/`shasum`, `grep`, `awk` | Built-in modules | **Yes**, executed on macOS 15 (BSD tools). The GNU/Linux variants are exercised by the CI workflow, which has **not run yet** |
+| `file`, `strings`, `od`, `stat`, `sha256sum`/`shasum`, `grep`, `awk` | Built-in modules | **Yes**, executed on macOS 15 (BSD tools). The GNU/Linux variants were exercised by the CI workflow on an Ubuntu runner on 2026-11-19 (all tests passed, see [TEST_RESULTS.md](../TEST_RESULTS.md)); not on a real Linux machine or VM |
 | `binwalk` | `binwalk EVIDENCE` | **No.** Tested only with a stub program (arguments, output capture, failure and timeout handling) |
 | `foremost` | `foremost -i EVIDENCE -o CASE/foremost/carved` | **No.** Stub only |
 | `bulk_extractor` | `bulk_extractor -o CASE/bulk_extractor/features EVIDENCE` | **No.** Stub only |

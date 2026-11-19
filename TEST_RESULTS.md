@@ -3,6 +3,8 @@
 Last full run: **2026-10-03**. Result: **112 passed, 1 skipped, 0 failed** (`python3 -m pytest`, about 35 seconds), repeated with
 `LANG=LC_ALL=en_US.UTF-8` with the same result.
 
+GitHub Actions: **2026-11-19**. Result: **Ubuntu 113 passed, 0 skipped; macOS 112 passed, 1 skipped**. The first run failed; see "FAIL" below.
+
 The one skipped test is `test_a_hanging_tool_is_stopped_by_the_timeout[True]`: it checks the code path that uses the system
 `timeout` command, which this macOS machine does not have. The other path (the built-in polling fallback) **was** tested.
 
@@ -26,6 +28,18 @@ The one skipped test is `test_a_hanging_tool_is_stopped_by_the_timeout[True]`: i
 | Report (`test_report.py`) | 8 | All sections present; skipped and unrequested modules stated plainly; hostile evidence text (fence markers, HTML, headings, backticks) and hostile analyst names cannot break the Markdown; **regression test for the UTF-8 locale bug** (below) |
 | Repository (`test_static.py`) | 36 | Required files exist and are not empty; no `sudo`/package manager/`curl`/`eval` in the code; only one deleting command (a temporary file inside the case); no secrets or personal paths; demo evidence hash matches, ground-truth layout matches the file, **rebuilds byte-for-byte**, has no executable header or antivirus test string; **ShellCheck clean; shfmt clean** |
 
+### GitHub Actions (2026-11-19)
+
+Commit `054c4fc`, run: <https://github.com/OYDeadpoolife/dfir-forensics-toolkit/actions/runs/44528257133>. This was the first run on Linux.
+
+| Runner | Bash | Python | Result |
+|---|---|---|---|
+| `ubuntu-latest` | 5.3.9 | 3.12.16 | **113 passed, 0 skipped.** The test of the system `timeout` code path, skipped on the author's Mac, ran and passed here |
+| `macos-latest` | 3.2.57 | 3.12.10 | **112 passed, 1 skipped** (the same `timeout` test as locally) |
+
+ShellCheck 0.11.0 ran on both. Only the built-in modules and the stub programs were exercised; the real `binwalk`, `foremost`, `bulk_extractor`
+and Volatility were not installed on the runners (see NOT TESTED).
+
 ### Mutation check (does the suite really catch bugs?)
 
 Four deliberate bugs were introduced one at a time into a copy of the project and the suite failed each time: the integrity comparison
@@ -45,7 +59,9 @@ and the first hash no longer taken before the modules ran.
 
 ## FAIL — executed and failed
 
-None in the last run.
+None in the last local run. **The first GitHub Actions run (2026-11-19, commit `f40fd9f`) failed on both runners with one failing test.**
+`test_no_backup_or_cache_files` counted `.pyc` files that the test run itself writes under `__pycache__` (they are git-ignored and never published).
+This had not shown up locally, where no bytecode was written. The test now ignores `__pycache__` and `.pytest_cache`. Fixed in commit `054c4fc`; both jobs have been green since.
 
 ## NOT TESTED — environment not available to the author when this was written
 
@@ -53,9 +69,7 @@ None in the last run.
 |---|---|
 | The **real** `binwalk`, `foremost`, `bulk_extractor` | Not installed. Only stubs were used (see `docs/tool-integration.md`) |
 | **Volatility 3** on a real memory image | Not installed; no memory image available |
-| Linux (GNU `stat`, `date`, `file`, `strings`, `timeout`) | No Linux machine was available. The code has a branch for each, but only the BSD branch was executed |
-| The system `timeout` code path | The test is skipped where `timeout` is missing (here) |
-| GitHub Actions workflow | Cannot run until the repository is pushed; the YAML has not been executed |
+| Linux on a real machine or VM (GNU `stat`, `date`, `file`, `strings`, `timeout`) | The suite passes on the Ubuntu GitHub Actions runner (see the CI section above); it was not run on a real Linux machine or VM |
 | Very large evidence (gigabytes) | Only files up to a few MB were used; streaming and the strings limit are by design, not measured |
 | Windows (native) | Not supported; use Linux, macOS or WSL |
 

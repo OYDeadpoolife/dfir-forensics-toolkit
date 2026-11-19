@@ -7,7 +7,7 @@ evidence file; it proves the file is not changed (SHA-256 before and after), rec
 strings and indicators (IP addresses, URLs, e-mail addresses), optionally runs `binwalk`, `foremost`, `bulk_extractor`
 and Volatility 3 when they are installed, and writes everything into a new case folder with a readable Markdown report.
 
-> **Status:** Version 1.0.0. The built-in modules and the orchestration are tested (see [TEST_RESULTS.md](TEST_RESULTS.md)).
+> **Status:** Version 1.0.0. The built-in modules and the orchestration are tested on macOS and, in GitHub Actions, on Ubuntu (see [TEST_RESULTS.md](TEST_RESULTS.md)).
 > **The integration with the real `binwalk`, `foremost`, `bulk_extractor` and Volatility has NOT been verified**: those
 > programs were not installed where this was built; they are tested only with stub programs. The demo evidence is
 > synthetic and harmless. This is a learning and portfolio project, not a certified forensic tool.
