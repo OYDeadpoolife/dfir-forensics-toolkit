@@ -60,6 +60,12 @@ evidence; ShellCheck, shfmt, GitHub Actions.
 ## How it works
 
 ```mermaid
+---
+config:
+  htmlLabels: false
+  flowchart:
+    htmlLabels: false
+---
 flowchart TD
     E[(Evidence file<br/>read-only)] --> V[Validate: regular file,<br/>safe case ID, new case folder]
     V --> A[Record file times<br/>no content read yet]
