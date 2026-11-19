@@ -1,0 +1,2 @@
+2026-10-03T13:45:53Z	file -b -- /private/tmp/dfir-demo/evidence/ws01_triage_synthetic.bin
+2026-10-03T13:45:53Z	strings -a -n 6 \(first\ 268435456\ bytes\ of\ the\ evidence\)

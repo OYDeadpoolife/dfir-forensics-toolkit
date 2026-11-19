@@ -1,0 +1,5 @@
+# Development and test tools only. dfir-triage itself needs no Python at run time;
+# Python is used for the test suite and to rebuild the synthetic demo evidence.
+pytest>=7.0
+shellcheck-py>=0.9
+shfmt-py>=3.7

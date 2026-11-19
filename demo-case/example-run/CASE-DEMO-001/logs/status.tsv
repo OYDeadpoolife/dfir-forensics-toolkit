@@ -1,0 +1,6 @@
+module	status	exit_code	started_utc	finished_utc	note
+metadata	OK	0	2026-10-03T13:45:53Z	2026-10-03T13:45:53Z	file type, MIME type and first bytes recorded
+strings	OK	0	2026-10-03T13:45:53Z	2026-10-03T13:45:53Z	full file scanned
+binwalk	SKIPPED	-	2026-10-03T13:45:53Z	2026-10-03T13:45:53Z	binwalk is not installed (Debian/Ubuntu/Kali: sudo apt install binwalk)
+foremost	SKIPPED	-	2026-10-03T13:45:53Z	2026-10-03T13:45:53Z	foremost is not installed (Debian/Ubuntu/Kali: sudo apt install foremost)
+bulk_extractor	SKIPPED	-	2026-10-03T13:45:53Z	2026-10-03T13:45:53Z	bulk_extractor is not installed (Debian/Ubuntu/Kali: sudo apt install bulk-extractor)

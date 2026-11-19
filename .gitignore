@@ -1,0 +1,32 @@
+# Case folders created by dfir-triage. They can contain real evidence artefacts: never commit them.
+dfir-cases/
+
+# Real evidence and memory images must never be committed
+*.raw
+*.mem
+*.vmem
+*.dmp
+*.E01
+*.dd
+*.img
+!demo-case/evidence/*.bin
+
+# Python / test tooling
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editors and operating systems
+.DS_Store
+*.swp
+*.orig
+*.bak
+.idea/
+.vscode/
+
+# Never commit keys or environment files
+*.pem
+*.key
+.env

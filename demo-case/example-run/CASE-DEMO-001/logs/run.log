@@ -1,0 +1,10 @@
+2026-10-03T13:45:53Z INFO  case CASE-DEMO-001 created in cases/CASE-DEMO-001
+2026-10-03T13:45:53Z INFO  hashing the evidence (SHA-256) ...
+2026-10-03T13:45:53Z INFO  running module: metadata
+2026-10-03T13:45:53Z INFO  running module: strings
+2026-10-03T13:45:53Z INFO  running module: binwalk
+2026-10-03T13:45:53Z WARN  module binwalk skipped: binwalk is not installed (Debian/Ubuntu/Kali: sudo apt install binwalk)
+2026-10-03T13:45:53Z INFO  running module: foremost
+2026-10-03T13:45:53Z WARN  module foremost skipped: foremost is not installed (Debian/Ubuntu/Kali: sudo apt install foremost)
+2026-10-03T13:45:53Z INFO  running module: bulk_extractor
+2026-10-03T13:45:53Z WARN  module bulk_extractor skipped: bulk_extractor is not installed (Debian/Ubuntu/Kali: sudo apt install bulk-extractor)

@@ -1,0 +1,7 @@
+path=/private/tmp/dfir-demo/evidence/ws01_triage_synthetic.bin
+size_bytes=34304
+modified_utc=2026-10-03T13:45:53Z
+inode_changed_utc=2026-10-03T13:45:53Z
+accessed_utc=2026-10-03T13:45:53Z
+permissions=-rw-r--r--
+owner=<redacted>

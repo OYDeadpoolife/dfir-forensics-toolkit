@@ -1,0 +1,105 @@
+HARBOR-SYNTH-001
+kf_~>r-H
+Kn0%n3
+Er8+}=
+0qXg!,
+U;L"/UGFU]i
+]#E;["
+iaDThp,
+et5*1"h
+== SYNTHETIC ARTIFACT LOG (training data, not from a real system) ==
+host=WS01 user=HARBOR\jdoe
+[2026-03-14T11:29:47Z] DOC_OPENED   C:\Users\jdoe\Downloads\Invoice_March.docm
+[2026-03-14T11:30:14Z] PROC_START   WINWORD.EXE -> cmd.exe -> powershell.exe
+[2026-03-14T11:30:16Z] NET_CONNECT  powershell.exe 10.10.10.20 -> 203.0.113.45:443
+[2026-03-14T11:30:17Z] FILE_CREATED C:\Users\jdoe\AppData\Local\Temp\harbor_update.js
+[2026-03-14T11:30:20Z] PROC_START   wscript.exe C:\Users\jdoe\AppData\Local\Temp\harbor_update.js
+[2026-03-14T11:31:20Z] NET_CONNECT  wscript.exe 10.10.10.20 -> 203.0.113.45:443 (repeats about every 60 seconds)
+[2026-03-14T11:36:40Z] PROC_START   wscript.exe -> whoami.exe, ipconfig.exe, net.exe
+== END OF SYNTHETIC ARTIFACT LOG ==
+G%%~_'_F
+sfYB)O
+k`8xXZ(
+W;hgfZ
+4yk^2;&2
+Vr1$],
+C5XXHr
+#o>,-X
+!h|FM3,
+vk]PF-
+nQC6@5y
+&GXx`d
+^(&f0G
+DeXD Q
+|24|9d
+,\1@kjq
+cJE|En
+u/]0Rw
+SNR@Qh
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 100] /Contents 4 0 R /Resources << >> >>
+endobj
+4 0 obj
+<< /Length 42 >>
+stream
+% SYNTHETIC invoice placeholder - harmless
+endstream
+endobj
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000219 00000 n 
+trailer
+<< /Size 5 /Root 1 0 R >>
+startxref
+/<}:4/
+osNC(z
+`)vAu/
+Ns&`N2
+!Gx+gu
+1H>8jj
+d#OY#FG
+l8kZ?c
+:kdB:,
+p<C/9[hd
+S?$ry&>
+>ZcM\^8
+:NAGyI
+fZ~=[Q
+Rcl^QQm
+notes.txtSYNTHETIC TRAINING FILE - harmless.
+Harbor Lab fictional case. Fictional contact: billing@invoices-harbor.test
+harbor_update.js// SYNTHETIC SAMPLE - harmless text, not a real script.
+// It exists only so that a file-carving tool has something to find.
+// Fictional staging address used in the Harbor Lab scenario:
+// http://203.0.113.45/stage2
+var synthetic = true;
+notes.txtPK
+harbor_update.jsPK
+Rb#`0-}
+G<Law9`
+i'65Qy
+8x`TEA6p
+i`?F$2
+mX$Jp0l$
+!TRVL5-
+qNS3!g
+1sBYt(
+?kVT"*)
+(iA.i3
+&0":.M
+7r#"k{A&
+P{%w00\z
+^yk#g3{
+ f|onJ5
+]D`sh)
+END-OF-SYNTHETIC-EVIDENCE
+xqXL&^

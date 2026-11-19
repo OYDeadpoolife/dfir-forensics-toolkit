@@ -1,0 +1,7 @@
+case_id=CASE-DEMO-001
+analyst=Training exercise
+tool=dfir-triage 1.0.0
+started_utc=2026-10-03T13:45:53Z
+evidence_path=/private/tmp/dfir-demo/evidence/ws01_triage_synthetic.bin
+system=Darwin 24.6.0
+command_line=dfir-triage --evidence evidence/ws01_triage_synthetic.bin --output-dir cases --case-id CASE-DEMO-001 --analyst Training\ exercise --no-color --quiet

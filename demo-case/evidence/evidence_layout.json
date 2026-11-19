@@ -1,0 +1,50 @@
+{
+  "file": "ws01_triage_synthetic.bin",
+  "size_bytes": 34304,
+  "sha256": "1fc14ac27d961449d3ca45ae9e9100e0ba930a9547f899e4987a54a79c708bc6",
+  "synthetic": true,
+  "objects": [
+    {
+      "name": "artifact_log.txt",
+      "type": "ASCII text",
+      "offset": 4608,
+      "length": 753,
+      "note": "Fictional activity log with UTC timestamps"
+    },
+    {
+      "name": "invoice_icon.png",
+      "type": "PNG image",
+      "offset": 11776,
+      "length": 70,
+      "note": "Harmless 1x1 image; carving target"
+    },
+    {
+      "name": "invoice_placeholder.pdf",
+      "type": "PDF document",
+      "offset": 17408,
+      "length": 474,
+      "note": "Tiny PDF; carving target"
+    },
+    {
+      "name": "download_bundle.zip",
+      "type": "ZIP archive",
+      "offset": 25088,
+      "length": 574,
+      "note": "Contains notes.txt and harbor_update.js (both harmless text)"
+    },
+    {
+      "name": "powershell_command_utf16le.bin",
+      "type": "UTF-16LE text",
+      "offset": 30208,
+      "length": 396,
+      "note": "Command line as Windows stores it; the encoded part decodes to a harmless message"
+    },
+    {
+      "name": "footer.txt",
+      "type": "ASCII text",
+      "offset": 33792,
+      "length": 26,
+      "note": "Marks the end of the file"
+    }
+  ]
+}
